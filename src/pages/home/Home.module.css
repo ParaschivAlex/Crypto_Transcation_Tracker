@@ -1,0 +1,153 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 960px;
+    margin: 60px auto;
+  }
+
+  .content {
+    padding-left: 30px;
+    
+  }
+
+  .content h2 {
+    padding-left: 30px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 160px;
+    position: center;
+    align-items: center;
+  }
+  .sidebar {
+    padding-right: 30px;
+  }
+  .sidebar form {
+    padding: 20px;
+    background: orange;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sidebar input, .sidebar select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    color: #555;
+    font-size: 1em;
+  }
+  .sidebar label {
+    margin: 0 auto 20px;
+    display: block;
+    color: black;
+  }
+  .sidebar button {
+    font-size: 1.2em;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  .sidebar h3 {
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 29px;
+    position: center;
+  }
+  .sidebar aside {
+    margin-top: 40px;
+    color: #555;
+  }
+  .sidebar aside li {
+    margin: 10px;
+  }
+
+  .transactions li {
+    margin: 30px auto;
+    border: 1px solid #f2f2f2;
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.1);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-left: 4px solid orange;
+    flex: auto;
+    margin-right: 50px;
+    margin-left: auto; 
+  }
+  .transactions .name {
+    color: #777;
+    font-size: 1.4em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .transactions .amount {
+    margin-left: auto;
+    margin-right: auto;
+    color: #777;
+    font-weight: bold;
+    font-size: 1.6em;
+  }
+  .transactions button {
+    position: absolute;
+    top: 0;
+    right:0;
+    background: #ddd;
+    color: #777;
+    border: none;
+    padding: 12px 8px;
+    text-align: center;
+    line-height: 0;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+
+  .autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+  }
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
